@@ -1,0 +1,31 @@
+.Products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__button {
+    width: 160px;
+    height: 50px;
+    border: 1px solid #b185dc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    color: #b185dc;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background: #b185dc;
+    color: #fff;
+    tansition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+  }
+
+  &__button:focus {
+    background: #b185dc;
+    color: #fff;
+  }
+}
