@@ -1,0 +1,15 @@
+.Set {
+  margin-bottom: 100px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+}
