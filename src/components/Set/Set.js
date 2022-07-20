@@ -1,11 +1,11 @@
 import { Container } from '../Container/Container';
-import { Data } from './Set.const';
+import { SetTitle } from '../SetTitle/SetTitle';
 import './Set.scss';
 
-export const Set = () => {
+export const Set = ({Data, title}) => {
   return (
     <div className="Set">
-      <h2 className="Set__title">Наборы</h2>
+      <SetTitle title={title}/>
       <div className="Set__flex">
         {Data.map((card) => (
           <Container
