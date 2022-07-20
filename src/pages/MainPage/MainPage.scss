@@ -1,4 +1,8 @@
 .MainPage {
   overflow: hidden;
   height: 100%;
+
+  &__padding {
+    padding: 0 140px;
+  }
 }

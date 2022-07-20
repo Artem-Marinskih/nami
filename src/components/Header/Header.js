@@ -5,7 +5,7 @@ import basket from '../../assets/images/basket.png';
 import './Header.scss';
 
 export const Header = () => {
-  const autoFocus = useCallback(el => el ? el.focus() : null, [])
+  const autoFocus = useCallback((el) => (el ? el.focus() : null), []);
   return (
     <header id="main" className="Header">
       <img className="Header__logo" src={logo} alt="logo:nami" />

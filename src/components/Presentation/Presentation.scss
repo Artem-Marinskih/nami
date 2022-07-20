@@ -1,0 +1,29 @@
+.Presentation {
+  display: flex;
+  justify-content: space-around;
+  margin: 91px 0 85px;
+
+  &__container {
+    text-align: center;
+    max-width: 267px;
+  }
+
+  &__button {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+    background: #f45e54;
+    cursor: pointer;
+  }
+
+  &__text {
+    margin: 20px 0 0 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+  }
+}

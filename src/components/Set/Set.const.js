@@ -7,7 +7,7 @@ import baldeg from '../../assets/images/Set/baldeg.png'
 import flex from '../../assets/images/Set/flex.png'
 import beg from '../../assets/images/Set/beg.png'
 
-export const Data = [
+export const setData = [
   {
     id: 1,
     imgPath: mamas,
