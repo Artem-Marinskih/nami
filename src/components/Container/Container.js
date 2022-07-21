@@ -3,45 +3,38 @@ import { array } from '../../pages/MainPage/MainPage';
 import { useState, useEffect } from 'react';
 
 export const Container = ({ id, imgPath, title, text, weight, money }) => {
-  // const arr = [];
-  let x;
-  const [state, setState] = useState(x);
+  // let products;
+  // const [state, setState] = useState(products);
 
   const getOut = () => {
     let productObject = {
       id: id,
       imgPath: imgPath,
       title: title,
-      text: text,
-      weight: weight,
       money: money,
       count: 1,
     };
 
-    console.log('click');
+    // console.log('click');
 
-    setState((prev) => ({
-      ...prev,
-      x: productObject,
-    }));
+    // setState((prev) => ({
+    //   ...prev,
+    //   products: productObject,
+    // }));
+
+
+    localStorage.setItem(id, JSON.stringify(productObject));
+
+    // localStorage.id = JSON.stringify(productObject)
   };
 
+  // useEffect(() => {
+  //   if (state !== undefined) {
+  //     array.push(state);
+  //   }
+  // });
+
   
-    useEffect(() => {
-      if (state !== undefined) {
-        if (array.find(el => el.id === state.id)) {
-           x.count + 1
-        } else {
-          // let y = array.find(el => el.id === state.id);
-          // console.log(y)
-          array.push(state);
-        }
-      
-    }
-    });
-  
-  
-  // console.log(arr);
 
   return (
     <div className="Container">

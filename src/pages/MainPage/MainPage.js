@@ -13,8 +13,6 @@ import { Footer } from '../../components/Footer/Footer';
 
 export const array = []
 
-console.log(array)
-
 export const MainPage = () => {
   // window.scrollTo(0, 0);
 
