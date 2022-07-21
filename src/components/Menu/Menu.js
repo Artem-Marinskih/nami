@@ -4,7 +4,9 @@ export const Menu = () => {
  
   return (
     <nav className="Menu">
+      <a href="#products">
       <button className="Menu__button Menu__button-grey">меню</button>
+      </a>
       <a href="#delivery">
         <button className="Menu__button">доставка и оплата</button>
       </a>

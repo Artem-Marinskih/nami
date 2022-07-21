@@ -1,7 +1,9 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { MainPage } from './pages/MainPage/MainPage';
+import { BasketPage } from './pages/BasketPage/BasketPage';
 import './App.scss';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/basket" element={<BasketPage />} />
         </Routes>
       </BrowserRouter>{' '}
     </div>

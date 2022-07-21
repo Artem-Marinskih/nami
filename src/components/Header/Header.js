@@ -1,11 +1,14 @@
 import { useCallback } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
 import vk from '../../assets/images/vk.svg';
 import basket from '../../assets/images/basket.png';
+import { array } from '../../pages/MainPage/MainPage';
 import './Header.scss';
 
 export const Header = () => {
   const autoFocus = useCallback((el) => (el ? el.focus() : null), []);
+
   return (
     <header id="main" className="Header">
       <img className="Header__logo" src={logo} alt="logo:nami" />
@@ -16,10 +19,13 @@ export const Header = () => {
         placeholder="Поиск"
         ref={autoFocus}
       ></input>
-      <button className="Header__basket">
-        <img src={basket} alt="basket"></img>
-        <p>корзина</p>
-      </button>
+      <Link to='/basket'>
+        <button className="Header__basket" >
+          <img src={basket} alt="basket"></img>
+          <p>корзина</p>
+        </button>
+      </Link>
+
       <ul className="Header__line">
         <li>
           <a href="tel:+79221521563" className="Header__phone">
